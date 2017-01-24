@@ -6,7 +6,7 @@ var greeting = function(name) {
 	return hello(name);
 };
 
-alert(hello);
-alert(hello('World!!'));
-alert(greeting('World!!'));
+console.log(hello);
+console.log(hello('World!!'));
+console.log(greeting('World!!'));
 

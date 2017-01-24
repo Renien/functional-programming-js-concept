@@ -11,3 +11,18 @@ var compact = function(xs) {
     return x !== null && x !== undefined;
   });
 };
+
+//Higer order function example
+function foo() {
+    var fn = function inner(msg){
+        console.log( msg );
+    };
+
+    bar( fn );
+}
+
+function bar(func) {
+    func( "Hello!" );
+}
+
+foo();                  // Hello!
